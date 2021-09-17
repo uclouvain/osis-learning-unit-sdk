@@ -16,6 +16,7 @@ from osis_learning_unit_sdk.model.decree_category_enum import DecreeCategoryEnum
 from osis_learning_unit_sdk.model.duration_unit_enum import DurationUnitEnum
 from osis_learning_unit_sdk.model.education_group_root import EducationGroupRoot
 from osis_learning_unit_sdk.model.education_group_type_enum import EducationGroupTypeEnum
+from osis_learning_unit_sdk.model.effective_class import EffectiveClass
 from osis_learning_unit_sdk.model.error import Error
 from osis_learning_unit_sdk.model.external_learning_unit import ExternalLearningUnit
 from osis_learning_unit_sdk.model.external_learning_unit_all_of import ExternalLearningUnitAllOf
