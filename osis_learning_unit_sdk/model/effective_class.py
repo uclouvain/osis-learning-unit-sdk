@@ -101,6 +101,7 @@ class EffectiveClass(ModelNormal):
             'volume_q1': (str,),  # noqa: E501
             'volume_q2': (str,),  # noqa: E501
             'type': (ComponentTypeEnum,),  # noqa: E501
+            'type_text': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -121,6 +122,7 @@ class EffectiveClass(ModelNormal):
         'volume_q1': 'volume_q1',  # noqa: E501
         'volume_q2': 'volume_q2',  # noqa: E501
         'type': 'type',  # noqa: E501
+        'type_text': 'type_text',  # noqa: E501
     }
 
     read_only_vars = {
@@ -176,6 +178,7 @@ class EffectiveClass(ModelNormal):
             volume_q1 (str): [optional]  # noqa: E501
             volume_q2 (str): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501
+            type_text (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -269,6 +272,7 @@ class EffectiveClass(ModelNormal):
             volume_q1 (str): [optional]  # noqa: E501
             volume_q2 (str): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501
+            type_text (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
