@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **derogation_quadrimester** | [**QuadrimesterEnum**](QuadrimesterEnum.md) |  | [optional] 
 **derogation_quadrimester_text** | **str** |  | [optional] 
 **session_derogation** | **str** |  | [optional] 
-**volume_q1** | **float** |  | [optional] 
-**volume_q2** | **float** |  | [optional] 
+**volume_q1** | **str** |  | [optional] 
+**volume_q2** | **str** |  | [optional] 
 **type** | [**ComponentTypeEnum**](ComponentTypeEnum.md) |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 

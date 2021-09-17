@@ -64,12 +64,6 @@ class EffectiveClass(ModelNormal):
     }
 
     validations = {
-        ('volume_q1',): {
-            'multiple_of': 0.01,
-        },
-        ('volume_q2',): {
-            'multiple_of': 0.01,
-        },
     }
 
     @cached_property
@@ -104,8 +98,8 @@ class EffectiveClass(ModelNormal):
             'derogation_quadrimester': (QuadrimesterEnum,),  # noqa: E501
             'derogation_quadrimester_text': (str,),  # noqa: E501
             'session_derogation': (str,),  # noqa: E501
-            'volume_q1': (float,),  # noqa: E501
-            'volume_q2': (float,),  # noqa: E501
+            'volume_q1': (str,),  # noqa: E501
+            'volume_q2': (str,),  # noqa: E501
             'type': (ComponentTypeEnum,),  # noqa: E501
         }
 
@@ -179,8 +173,8 @@ class EffectiveClass(ModelNormal):
             derogation_quadrimester (QuadrimesterEnum): [optional]  # noqa: E501
             derogation_quadrimester_text (str): [optional]  # noqa: E501
             session_derogation (str): [optional]  # noqa: E501
-            volume_q1 (float): [optional]  # noqa: E501
-            volume_q2 (float): [optional]  # noqa: E501
+            volume_q1 (str): [optional]  # noqa: E501
+            volume_q2 (str): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501
         """
 
@@ -272,8 +266,8 @@ class EffectiveClass(ModelNormal):
             derogation_quadrimester (QuadrimesterEnum): [optional]  # noqa: E501
             derogation_quadrimester_text (str): [optional]  # noqa: E501
             session_derogation (str): [optional]  # noqa: E501
-            volume_q1 (float): [optional]  # noqa: E501
-            volume_q2 (float): [optional]  # noqa: E501
+            volume_q1 (str): [optional]  # noqa: E501
+            volume_q2 (str): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501
         """
 
