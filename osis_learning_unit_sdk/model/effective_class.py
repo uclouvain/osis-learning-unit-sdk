@@ -11,6 +11,7 @@
 import re  # noqa: F401
 import sys  # noqa: F401
 
+from osis_learning_unit_sdk.exceptions import ApiAttributeError
 from osis_learning_unit_sdk.model_utils import (  # noqa: F401
     ApiTypeError,
     ModelComposed,
@@ -26,7 +27,6 @@ from osis_learning_unit_sdk.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 from ..model_utils import OpenApiModel
-from osis_learning_unit_sdk.exceptions import ApiAttributeError
 
 
 def lazy_import():
@@ -97,7 +97,7 @@ class EffectiveClass(ModelNormal):
             'organization_name': (str,),  # noqa: E501
             'derogation_quadrimester': (QuadrimesterEnum,),  # noqa: E501
             'derogation_quadrimester_text': (str,),  # noqa: E501
-            'session_derogation': (str,),  # noqa: E501
+            'session_derogation': (str, none_type,),  # noqa: E501
             'volume_q1': (str,),  # noqa: E501
             'volume_q2': (str,),  # noqa: E501
             'type': (ComponentTypeEnum,),  # noqa: E501
@@ -174,7 +174,7 @@ class EffectiveClass(ModelNormal):
             organization_name (str): [optional]  # noqa: E501
             derogation_quadrimester (QuadrimesterEnum): [optional]  # noqa: E501
             derogation_quadrimester_text (str): [optional]  # noqa: E501
-            session_derogation (str): [optional]  # noqa: E501
+            session_derogation (str, none_type): [optional]  # noqa: E501
             volume_q1 (str): [optional]  # noqa: E501
             volume_q2 (str): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501
@@ -268,7 +268,7 @@ class EffectiveClass(ModelNormal):
             organization_name (str): [optional]  # noqa: E501
             derogation_quadrimester (QuadrimesterEnum): [optional]  # noqa: E501
             derogation_quadrimester_text (str): [optional]  # noqa: E501
-            session_derogation (str): [optional]  # noqa: E501
+            session_derogation (str, none_type): [optional]  # noqa: E501
             volume_q1 (str): [optional]  # noqa: E501
             volume_q2 (str): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501

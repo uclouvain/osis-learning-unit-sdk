@@ -26,8 +26,6 @@ from osis_learning_unit_sdk.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 from ..model_utils import OpenApiModel
-from osis_learning_unit_sdk.exceptions import ApiAttributeError
-
 
 
 class QuadrimesterEnum(ModelSimple):
@@ -52,6 +50,7 @@ class QuadrimesterEnum(ModelSimple):
 
     allowed_values = {
         ('value',): {
+            'None': None,
             'Q1': "Q1",
             'Q2': "Q2",
             'Q3': "Q3",
@@ -71,7 +70,7 @@ class QuadrimesterEnum(ModelSimple):
         """
         return (bool, date, datetime, dict, float, int, list, str, none_type,)  # noqa: E501
 
-    _nullable = False
+    _nullable = True
 
     @cached_property
     def openapi_types():

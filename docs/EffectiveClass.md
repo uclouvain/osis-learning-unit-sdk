@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **organization_name** | **str** |  | [optional] 
 **derogation_quadrimester** | [**QuadrimesterEnum**](QuadrimesterEnum.md) |  | [optional] 
 **derogation_quadrimester_text** | **str** |  | [optional] 
-**session_derogation** | **str** |  | [optional] 
+**session_derogation** | **str, none_type** |  | [optional] 
 **volume_q1** | **str** |  | [optional] 
 **volume_q2** | **str** |  | [optional] 
 **type** | [**ComponentTypeEnum**](ComponentTypeEnum.md) |  | [optional] 
