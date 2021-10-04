@@ -98,8 +98,8 @@ class EffectiveClass(ModelNormal):
             'derogation_quadrimester': (QuadrimesterEnum,),  # noqa: E501
             'derogation_quadrimester_text': (str,),  # noqa: E501
             'session_derogation': (str, none_type,),  # noqa: E501
-            'volume_q1': (str,),  # noqa: E501
-            'volume_q2': (str,),  # noqa: E501
+            'volume_q1': (str, none_type,),  # noqa: E501
+            'volume_q2': (str, none_type,),  # noqa: E501
             'type': (ComponentTypeEnum,),  # noqa: E501
             'type_text': (str,),  # noqa: E501
         }
@@ -175,8 +175,8 @@ class EffectiveClass(ModelNormal):
             derogation_quadrimester (QuadrimesterEnum): [optional]  # noqa: E501
             derogation_quadrimester_text (str): [optional]  # noqa: E501
             session_derogation (str, none_type): [optional]  # noqa: E501
-            volume_q1 (str): [optional]  # noqa: E501
-            volume_q2 (str): [optional]  # noqa: E501
+            volume_q1 (str, none_type): [optional]  # noqa: E501
+            volume_q2 (str, none_type): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
         """
@@ -269,8 +269,8 @@ class EffectiveClass(ModelNormal):
             derogation_quadrimester (QuadrimesterEnum): [optional]  # noqa: E501
             derogation_quadrimester_text (str): [optional]  # noqa: E501
             session_derogation (str, none_type): [optional]  # noqa: E501
-            volume_q1 (str): [optional]  # noqa: E501
-            volume_q2 (str): [optional]  # noqa: E501
+            volume_q1 (str, none_type): [optional]  # noqa: E501
+            volume_q2 (str, none_type): [optional]  # noqa: E501
             type (ComponentTypeEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
         """
