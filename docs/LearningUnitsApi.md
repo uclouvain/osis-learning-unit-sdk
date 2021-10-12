@@ -468,6 +468,7 @@ with osis_learning_unit_sdk.ApiClient(configuration) as api_client:
     lang = "lang_example" # str |  (optional)
     campus = "campus_example" # str |  (optional)
     stage_dimona = True # bool |  (optional)
+    learning_unit_codes = "learning_unit_codes_example" # str |  (optional)
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
     x_user_first_name = "X-User-FirstName_example" # str |  (optional)
     x_user_last_name = "X-User-LastName_example" # str |  (optional)
@@ -477,7 +478,7 @@ with osis_learning_unit_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.learningunits_list(limit=limit, offset=offset, acronym=acronym, acronym_like=acronym_like, year=year, lang=lang, campus=campus, stage_dimona=stage_dimona, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
+        api_response = api_instance.learningunits_list(limit=limit, offset=offset, acronym=acronym, acronym_like=acronym_like, year=year, lang=lang, campus=campus, stage_dimona=stage_dimona, learning_unit_codes=learning_unit_codes, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_learning_unit_sdk.ApiException as e:
         print("Exception when calling LearningUnitsApi->learningunits_list: %s\n" % e)
@@ -496,6 +497,7 @@ Name | Type | Description  | Notes
  **lang** | **str**|  | [optional]
  **campus** | **str**|  | [optional]
  **stage_dimona** | **bool**|  | [optional]
+ **learning_unit_codes** | **str**|  | [optional]
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
  **x_user_first_name** | **str**|  | [optional]
  **x_user_last_name** | **str**|  | [optional]
