@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **credit** | **float** |  | [optional] 
 **status** | **bool** |  | [optional] 
 **has_proposal** | **bool** |  | [optional] 
+**has_classes** | **bool** |  | [optional] 
 **title** | **str** |  | [optional] 
 **type** | [**LearningUnitTypeEnum**](LearningUnitTypeEnum.md) |  | [optional] 
 **type_text** | **str** |  | [optional] 
